@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maths World</title>
+    <style>
+        table{
+            border-spacing:10px 30px ;
+        }
+        tr,button {
+          border: 0px solid black;
+          border-radius: 20px;
+        }
+        h1{
+        text-align:center;
+        font-size:300%;
+        background-color:yellow;
+        }
+</style>
+</head>
+<body style="background-color:LightGray;">
+
+<h1><span style="background-color:#FFBF00;">Welcome to Maths World</span></h1>
+    <table style="width:100%">
+        <tr>
+            <td>
+                <form action="/si" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center; background-color:Tomato;color:Black;">
+                    Simple Interest</button>
+                </form>
+            </td>
+
+            <td>
+                <form action="/ci" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:Blue;color:white;">
+                    Compound Interest</button></form>
+            </td>
+
+            <td>
+                <form action="/hcf_lcm" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:Red;color:Black;">
+                    HCF and LCM</button></form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="/profit_loss" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:Cyan;color:Black;">
+                    Profit and Loss</button></form>
+            </td>
+
+            <td>
+                <form action="/km_to_m" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:black;color:white;">
+                    Kilometer to Meter</button></form>
+            </td>
+
+            <td>
+                <form action="/km_to_cm" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:OrangeRed;color:Black;">
+                    Kilometer to Centimeter</button></form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form action="/d_to_b" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:Green;color:Black;">
+                    Decimal to Binary</button></form>
+            </td>
+
+            <td>
+            <form action="/d_to_o" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                    background-color:RoyalBlue;color:white;">
+                    Decimal to Octal</button></form>
+            </td>
+
+            <td>
+            <form action="/d_to_h" method='post'> {% csrf_token %}
+                <button type="submit" style="width:100%;font-size:300%;
+                text-align:center;background-color:Coral;color:Black;">
+                    Decimal to Hexadecimal</button></form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

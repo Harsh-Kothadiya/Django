@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--Typed.js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+
+    <title>Simple Interest</title>
+    <style>
+        h1{
+            text-align:right;
+            margin-bottom:20px;
+        }
+        div{
+        margin-top:30px;
+        margin-bottom:20px;
+        }
+        button{
+        text-align:center;
+        width:100%;
+        font-size:400%;
+        border-radius:20px;
+        border:0px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#e5e4e2;">
+      <div class="container">
+    <form action="/si_result" method="post"> {% csrf_token %}
+    <h1>Enter a Principle(in Rs):<input type="text" name="P"  required></h1>
+     <h1>Enter a Rate(in %):<input type="text" name="R"  required></h1>
+        <h1>Enter a Time:<input type="text" name="T"  required></h1>
+        <button type="submit" style="background-color:Tomato;color:Black;">Submit</button>
+    </form>
+
+          <form action="/index" method="post"> {% csrf_token %}
+            <button type="submit" style="margin-top:30px;background-color:Red;color:White;">Homepage</button>
+          </form>
+      </div>
+
+</body>
+</html>

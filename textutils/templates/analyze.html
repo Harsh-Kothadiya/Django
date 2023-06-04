@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Text Utils</title>
+    <style>
+      button {
+          border: 0px solid black;
+          border-radius: 20px;
+        }
+    </style>
+
+  </head>
+  <body style="background-color:#999999;">
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Success!</strong> Your text has been analyzed!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="container">
+
+  <h1 style="font-size:200%;">Your Analyzed Text </h1>
+  <p>
+    <pre style="font-size:200%;">{{ analyzed_text }}</pre>
+      </p>
+  </div>
+
+    <div class="container">
+    <form action="/">
+      <button type="submit" style="width:100%;font-size:300%;
+                text-align:center; background-color:#454545;color:White;">Home page</button>
+    </form>
+    </div>
+
+  </body>
+</html>
